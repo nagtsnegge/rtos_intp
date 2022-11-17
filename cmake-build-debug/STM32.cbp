@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="STM32"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/noah/prog/STM32/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32.elf">
+				<Option output="/Users/noah/prog/STM32/cmake-build-debug/STM32.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/noah/prog/STM32/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add directory="/Users/noah/prog/STM32/Core/Inc"/>
+					<Add directory="/Users/noah/prog/STM32/USB_HOST/App"/>
+					<Add directory="/Users/noah/prog/STM32/USB_HOST/Target"/>
+					<Add directory="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+					<Add directory="/Users/noah/prog/STM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/Users/noah/prog/STM32/Drivers/CMSIS/Include"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 STM32.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32.elf/fast">
+				<Option output="/Users/noah/prog/STM32/cmake-build-debug/STM32.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/noah/prog/STM32/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add directory="/Users/noah/prog/STM32/Core/Inc"/>
+					<Add directory="/Users/noah/prog/STM32/USB_HOST/App"/>
+					<Add directory="/Users/noah/prog/STM32/USB_HOST/Target"/>
+					<Add directory="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+					<Add directory="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+					<Add directory="/Users/noah/prog/STM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/Users/noah/prog/STM32/Drivers/CMSIS/Include"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 STM32.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/noah/prog/STM32/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/noah/prog/STM32/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/noah/prog/STM32/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/noah/prog/STM32/Core/Inc/FreeRTOSConfig.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Inc/display.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Inc/fonts.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Inc/main.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Inc/pics.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Inc/stm32f4xx_hal_conf.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Inc/stm32f4xx_it.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Inc/tasks.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/display.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/freertos.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/main.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/stm32f4xx_hal_msp.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/stm32f4xx_it.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/syscalls.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/sysmem.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/system_stm32f4xx.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Src/tasks.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/Startup/startup_stm32f407vgtx.s">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/pics/pic_rosi1_320x240.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/pics/pic_rosi2_320x240.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Core/pics/pic_thi_320x240.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Device/ST/STM32F4xx/LICENSE.txt">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/CMSIS/LICENSE.txt">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/LICENSE.txt">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc/usbh_cdc.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/atomic.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/list.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/task.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/STM32F407VGTX_FLASH.ld">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/USB_HOST/App/usb_host.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/USB_HOST/App/usb_host.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/USB_HOST/Target/usbh_conf.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/USB_HOST/Target/usbh_conf.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/USB_HOST/Target/usbh_platform.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/USB_HOST/Target/usbh_platform.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/Users/noah/prog/STM32/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
